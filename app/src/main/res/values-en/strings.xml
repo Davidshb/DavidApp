@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DavidApp</string>
+    <string name="settings_description">settings icon</string>
+    <string name="localisation_text">localisation</string>
+    <string name="historique">Historic</string>
+    <string name="chargement">LOADING</string>
+    <string name="settings_title">go to params</string>
+    <string name="title_parametre">Settings</string>
+</resources>
