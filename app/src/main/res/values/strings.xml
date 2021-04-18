@@ -6,4 +6,11 @@
     <string name="settings_title">accéder au paramètres</string>
     <string name="chargement">CHARGEMENT</string>
     <string name="title_parametre">Paramètre</string>
+    <string name="logo_eseo_description">logo eseo</string>
+    <string name="title_localisation">Localisation</string>
+    <string name="request_message">nous avons besoin de connaitre votre localisation</string>
+    <string name="request_title">Localisation</string>
+    <string name="request_location_positive_button">OK</string>
+    <string name="request_location_negative_button">Non merci</string>
+    <string name="location_button_text">Me localiser</string>
 </resources>

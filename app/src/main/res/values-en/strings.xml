@@ -7,4 +7,11 @@
     <string name="chargement">LOADING</string>
     <string name="settings_title">go to params</string>
     <string name="title_parametre">Settings</string>
+    <string name="logo_eseo_description">eseo logo</string>
+    <string name="title_localisation">Location</string>
+    <string name="request_message">we need to know your location</string>
+    <string name="request_title">Localisation</string>
+    <string name="request_location_positive_button">OK</string>
+    <string name="request_location_negative_button">No thanks</string>
+    <string name="location_button_text">Locate me</string>
 </resources>
