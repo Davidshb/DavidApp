@@ -7,13 +7,19 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.eseo.a2.davidapp.R
+import com.eseo.a2.davidapp.data.parametre.ParametreItem
 
-class ParametreAdapter(private val paramsList: Array<ParametreItem> ) : RecyclerView.Adapter<ParametreAdapter.ViewHolder>() {
+class ParametreAdapter(private val paramsList: Array<ParametreItem>) :
+    RecyclerView.Adapter<ParametreAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun showItem(param: ParametreItem) {
-            itemView.findViewById<TextView>(R.id.param_text).text = param.name
+            // bind de l'icon
             itemView.findViewById<ImageView>(R.id.param_vec).setImageResource(param.icon)
 
+            // bind du text
+            itemView.findViewById<TextView>(R.id.param_text).text = param.name
+
+            //bind de l'action à faire lors du clique
             itemView.findViewById<ImageView>(R.id.forward).setOnClickListener {
                 param.onClick.invoke()
             }
@@ -21,7 +27,9 @@ class ParametreAdapter(private val paramsList: Array<ParametreItem> ) : Recycler
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.parametre_item, parent, false)
+        val view = LayoutInflater
+            .from(parent.context)
+            .inflate(R.layout.parametre_item, parent, false)
         return ViewHolder(view)
     }
 
@@ -33,5 +41,3 @@ class ParametreAdapter(private val paramsList: Array<ParametreItem> ) : Recycler
         return paramsList.size
     }
 }
-
-data class ParametreItem(val name: String, val icon: Int, val onClick: (() -> Unit))

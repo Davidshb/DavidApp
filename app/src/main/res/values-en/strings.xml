@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DavidApp</string>
-    <string name="settings_description">settings icon</string>
     <string name="localisation_text">localisation</string>
     <string name="historique">Historic</string>
     <string name="chargement">LOADING</string>
@@ -14,4 +13,10 @@
     <string name="request_location_positive_button">OK</string>
     <string name="request_location_negative_button">No thanks</string>
     <string name="location_button_text">Locate me</string>
+    <string name="unknow_address">unknow address</string>
+    <string name="location_ask_change_params_text">acces your settings to change location autorisation</string>
+    <string name="title_historique">Historic</string>
+    <string name="historique_addresse_text">Address</string>
+    <string name="locate_eseo_distance_text">distance to eseo</string>
+    <string name="effacer_button">clear historic</string>
 </resources>

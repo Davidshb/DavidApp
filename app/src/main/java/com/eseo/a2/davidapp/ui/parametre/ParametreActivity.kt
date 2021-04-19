@@ -1,6 +1,5 @@
 package com.eseo.a2.davidapp.ui.parametre
 
-import android.Manifest
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -12,7 +11,7 @@ import com.eseo.a2.davidapp.BuildConfig
 import com.eseo.a2.davidapp.R
 import com.eseo.a2.davidapp.databinding.ActivityParametreBinding
 import com.eseo.a2.davidapp.ui.parametre.adapter.ParametreAdapter
-import com.eseo.a2.davidapp.ui.parametre.adapter.ParametreItem
+import com.eseo.a2.davidapp.data.parametre.ParametreItem
 
 class ParametreActivity : AppCompatActivity() {
     private lateinit var binding: ActivityParametreBinding
@@ -24,6 +23,7 @@ class ParametreActivity : AppCompatActivity() {
 
         binding.recycler.layoutManager = LinearLayoutManager(this)
 
+        // mon tableau de paramètre
         val pl = arrayOf(
             ParametreItem("paramètre application", R.drawable.settings) {
                 startActivity(
@@ -41,7 +41,8 @@ class ParametreActivity : AppCompatActivity() {
                 )
             },
             ParametreItem("ouvrir carte", R.drawable.map) {
-                val eseoURI = Uri.parse("geo:47.493127917011186,-0.5513476199672469")
+                val eseoURI =
+                    Uri.parse("geo:" + getString(R.string.eseo_lat) + "," + getString(R.string.eseo_lng))
                 startActivity(Intent(Intent.ACTION_VIEW, eseoURI))
             },
             ParametreItem("site web", R.drawable.web) {

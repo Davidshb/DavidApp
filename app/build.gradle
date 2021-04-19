@@ -62,4 +62,8 @@ dependencies {
 
     //j'ajoue le json
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.1.0'
+
+    //open street Map
+    def osmVersion = "6.1.10"
+    implementation "org.osmdroid:osmdroid-android:$osmVersion"
 }

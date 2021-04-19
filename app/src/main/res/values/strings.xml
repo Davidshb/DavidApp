@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">DavidApp</string>
-    <string name="settings_description">l\'icone pour le settings</string>
     <string name="localisation_text">Localisation</string>
     <string name="historique">Historique</string>
     <string name="settings_title">accéder au paramètres</string>
@@ -13,4 +12,14 @@
     <string name="request_location_positive_button">OK</string>
     <string name="request_location_negative_button">Non merci</string>
     <string name="location_button_text">Me localiser</string>
+    <string name="location_ask_change_params_text">Accéder à vos paramètres d\'autorisation pour modifier les paramètres de localisation</string>
+    <string name="unknow_address">adresse introuvable</string>
+    <string name="lat_string" translatable="false">lat: %s\nlng: %s</string>
+    <string name="eseo_lat" translatable="false">47.493127917011186</string>
+    <string name="eseo_lng" translatable="false">-0.5513476199672469</string>
+    <string name="historique_addresse_text">Addresse</string>
+    <string name="title_historique">Historique</string>
+    <string name="location_distance_eso_text" translatable="false">\"%.3f km\"</string>
+    <string name="locate_eseo_distance_text">distance à l\'éseo</string>
+    <string name="effacer_button">effacer l\'historique</string>
 </resources>
