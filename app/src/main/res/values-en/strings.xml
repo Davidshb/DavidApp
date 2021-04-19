@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">DavidApp</string>
     <string name="localisation_text">localisation</string>
-    <string name="historique">Historic</string>
+    <string name="historique">History</string>
     <string name="chargement">LOADING</string>
     <string name="settings_title">go to params</string>
     <string name="title_parametre">Settings</string>
@@ -15,8 +15,13 @@
     <string name="location_button_text">Locate me</string>
     <string name="unknow_address">unknow address</string>
     <string name="location_ask_change_params_text">acces your settings to change location autorisation</string>
-    <string name="title_historique">Historic</string>
+    <string name="title_historique">History</string>
     <string name="historique_addresse_text">Address</string>
     <string name="locate_eseo_distance_text">distance to eseo</string>
-    <string name="effacer_button">clear historic</string>
+    <string name="effacer_button">clear history</string>
+    <string name="params_text_application">application parameters</string>
+    <string name="params_text_location">location</string>
+    <string name="params_text_maps">open maps</string>
+    <string name="params_text_web">go to website</string>
+    <string name="params_text_mail">send an email</string>
 </resources>

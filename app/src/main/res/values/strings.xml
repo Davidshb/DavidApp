@@ -22,4 +22,9 @@
     <string name="location_distance_eso_text" translatable="false">\"%.3f km\"</string>
     <string name="locate_eseo_distance_text">distance à l\'éseo</string>
     <string name="effacer_button">effacer l\'historique</string>
+    <string name="params_text_application">paramètre application</string>
+    <string name="params_text_location">localisation</string>
+    <string name="params_text_maps">ouvrir carte</string>
+    <string name="params_text_web">site web</string>
+    <string name="params_text_mail">envoyer un mail</string>
 </resources>

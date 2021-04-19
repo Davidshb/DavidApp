@@ -25,7 +25,7 @@ class ParametreActivity : AppCompatActivity() {
 
         // mon tableau de paramètre
         val pl = arrayOf(
-            ParametreItem("paramètre application", R.drawable.settings) {
+            ParametreItem(getString(R.string.params_text_application), R.drawable.settings) {
                 startActivity(
                     Intent(
                         Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
@@ -33,22 +33,22 @@ class ParametreActivity : AppCompatActivity() {
                     )
                 )
             },
-            ParametreItem("localisation", R.drawable.location) {
+            ParametreItem(getString(R.string.params_text_location), R.drawable.location) {
                 startActivity(
                     Intent().apply {
                         action = Settings.ACTION_LOCATION_SOURCE_SETTINGS
                     }
                 )
             },
-            ParametreItem("ouvrir carte", R.drawable.map) {
+            ParametreItem(getString(R.string.params_text_maps), R.drawable.map) {
                 val eseoURI =
                     Uri.parse("geo:" + getString(R.string.eseo_lat) + "," + getString(R.string.eseo_lng))
                 startActivity(Intent(Intent.ACTION_VIEW, eseoURI))
             },
-            ParametreItem("site web", R.drawable.web) {
+            ParametreItem(getString(R.string.params_text_web), R.drawable.web) {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.eseo.fr")))
             },
-            ParametreItem("envoyer un mail", R.drawable.mail) {
+            ParametreItem(getString(R.string.params_text_mail), R.drawable.mail) {
                 val mailURI = Uri.parse("mailto:David%20Sehoubo<koffi.sehoubo@reseau.eseo.fr>")
                 startActivity(Intent(Intent.ACTION_VIEW, mailURI))
             }
